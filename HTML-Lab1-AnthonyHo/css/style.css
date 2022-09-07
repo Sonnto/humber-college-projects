@@ -1,0 +1,35 @@
+.title-heading {
+  font-size: 50px;
+}
+
+.first-subheading {
+  font-size: 30px;
+}
+.second-subheading {
+  font-size: 30px;
+}
+
+.main-body {
+  font-size: 20px;
+}
+
+table {
+  border: 2px solid black;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th {
+  border: 2px solid black;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
