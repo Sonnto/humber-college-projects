@@ -42,5 +42,5 @@ ORDER BY LENGTH(title) DESC
 SELECT BillingCity AS "Billing City", total, invoicedate AS "Invoice Date"
 FROM invoice
 WHERE total > 5
-AND BillingCity IN ('Toronto', 'Berlin')
+AND BillingCity IN ("Toronto", "Berlin")
 ORDER BY invoicedate DESC
