@@ -22,9 +22,12 @@ gamesAverage = gamesTotal / numOfGames;
 targetDifference = targetAverage - gamesAverage;
 
 //Output Messages
-alert("Your average for " + numOfGames + "games is " + gamesAverage);
+alert(
+  "Your average for " + numOfGames + " " + "games is " + gamesAverage + "."
+);
 alert(
   "Your average is " +
     targetDifference.toFixed(1) +
-    "less than the target average. "
+    " " +
+    "less than the target average."
 );
