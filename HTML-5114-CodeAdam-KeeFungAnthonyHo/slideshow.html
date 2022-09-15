@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Slideshow</title>
+    <style>
+      #slideshow {
+        position: relative;
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
+      }
+
+      #slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        display: none;
+      }
+
+      #slideshow img:first-child {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow">
+      <img src="images/me-with-friends.jpg" />
+      <img src="images/piano.jpg" />
+      <img src="images/me-in-forest.jpg" />
+      <img src="images/sunflowers.jpg" />
+      <img src="images/me-in-paris.jpg" />
+    </div>
+
+    <button id="previous"><<</button>
+    <button id="next">>></button>
+
+    <script>
+      // Define a variable to track which image is visible
+      let counter = 0;
+
+      // Track the number images
+      const images = document.getElementsByTagName("img").length;
+      console.log(images);
+
+      // Define a reference to the next button
+      const nextButton = document.getElementById("next");
+
+      // Define a reference to the list of images
+      const allImages = document.getElementsByTagName("img");
+
+      // Add an event to the next button
+      nextButton.addEventListener("click", function () {
+        // Hide the current image
+        allImages[counter].style.display = "none";
+
+        // Add one to the image tracking variable
+        counter++;
+
+        // If we are at the last image
+        if (counter == images) {
+          // Go back to the first image
+          counter = 0;
+        }
+
+        // Display the next image
+        allImages[counter].style.display = "inline";
+      });
+
+      // Define a reference to the next button
+      const previousButton = document.getElementById("previous");
+
+      // Add an event to the next button
+      previousButton.addEventListener("click", function () {
+        // Hide the current image
+        allImages[counter].style.display = "none";
+
+        // Add one to the image tracking variable
+        counter--;
+
+        // If we are at the last image
+        if (counter == -1) {
+          // Go back to the first image
+          counter = images - 1;
+        }
+
+        // Display the next image
+        allImages[counter].style.display = "inline";
+      });
+    </script>
+  </body>
+</html>
