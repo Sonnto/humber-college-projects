@@ -43,3 +43,28 @@ if (firstName === "Bernie") {
 } else {
   alert("Sorry, I don't know you.");
 }
+
+var fName = prompt("Please log in with a number");
+console.log(fName);
+
+if (isNaN(fName)) {
+  alert("Hey, that's not a number!");
+}
+
+console.log(typeof fName); //this will show the data type of luckyNum
+
+var stopLight = prompt("What colour is the light?", "Red, Amber, or Green?");
+
+switch (stopLight) {
+  case "Green":
+    alert("GO!!!!");
+    break;
+
+  case "Amber":
+    alert("Clear intersection!");
+    break;
+
+  case "Red":
+    alert("STOP!!!!");
+    break;
+}
