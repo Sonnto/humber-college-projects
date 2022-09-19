@@ -26,3 +26,20 @@ var lastName = "Ho";
 if (firstName === "Anthony" && lastName === "Ho") {
   alert("Hi, Anthony Ho!");
 }
+
+var userInput = confirm("Hi, are we having fun yet?");
+console.log(userInput);
+
+if (userInput === true) {
+  alert("You said Yes! Yay!");
+} else {
+  alert("You did not say yes. Sadge.");
+}
+
+if (firstName === "Bernie") {
+  alert("Hey, Bernie! I know you!");
+} else if (firstName === "Anthony") {
+  alert("Hey, Anthony! I know you!");
+} else {
+  alert("Sorry, I don't know you.");
+}
