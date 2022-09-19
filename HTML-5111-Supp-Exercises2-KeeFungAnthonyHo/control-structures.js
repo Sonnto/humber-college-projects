@@ -41,7 +41,6 @@ if (popInInt < 30) {
 alert(outMessage);
 
 //EXERCISE 5
-
 //Variables
 var userCode;
 var outMessage;
