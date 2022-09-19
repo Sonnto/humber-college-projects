@@ -14,9 +14,9 @@ if (joinList === true) {
     userEmail === "" ||
     userEmail === "me@example.com"
   ) {
-    alert("Thank you, but your e-mail was not valid");
+    alert("Thank you, but your e-mail was not valid.");
   } else {
-    alert("Thank you, the next newsletter will go to " + userEmail);
+    alert("Thank you, the next newsletter will go to " + userEmail + ".");
   }
 } else {
   alert("Thank you, we will not bother you again.");
