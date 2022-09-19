@@ -54,17 +54,20 @@ if (isNaN(fName)) {
 console.log(typeof fName); //this will show the data type of luckyNum
 
 var stopLight = prompt("What colour is the light?", "Red, Amber, or Green?");
-
-switch (stopLight) {
-  case "Green":
+var stopString = stopLight.toLowerCase();
+switch (stopString) {
+  case "green":
     alert("GO!!!!");
     break;
 
-  case "Amber":
+  case "amber":
     alert("Clear intersection!");
     break;
 
-  case "Red":
+  case "red":
     alert("STOP!!!!");
     break;
+
+  default:
+    alert("The traffic light is malfunctioning. Drive with caution.");
 }
