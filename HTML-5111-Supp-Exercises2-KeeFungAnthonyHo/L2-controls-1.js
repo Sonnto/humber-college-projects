@@ -16,6 +16,13 @@ if (loggedIn == false) {
   alert("That can't be true!");
 }
 
+//logical OR - multiple values but only one needs to be true;
 if (firstName === "Anthony" || firstName === "Bernie") {
   alert("Hello, Anthony or Bernie.");
+}
+
+//logical AND - multiple values but all of them needs to be true;
+var lastName = "Ho";
+if (firstName === "Anthony" && lastName === "Ho") {
+  alert("Hi, Anthony Ho!");
 }
