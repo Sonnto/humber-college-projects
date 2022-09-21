@@ -16,10 +16,9 @@ h2 {
 }
 
 /* box-up code displayed on HTML*/
-.boxed {
+.boxedCode {
   background-color: rgb(190, 190, 190);
   border-style: outset;
-  display: inline;
 }
 
 .aboutBio {
