@@ -1,0 +1,57 @@
+html {
+  font: normal 1em/1.25 Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.aboutBio {
+  font-style: italic;
+  color: orangered;
+}
+
+.comSection {
+  font-style: italic;
+  color: tomato;
+}
+
+.updateQ {
+  font-style: italic;
+  color: orange;
+}
+
+a:visited {
+  color: hotpink;
+}
+
+a,
+a:link {
+  color: royalblue;
+}
+
+a:hover {
+  color: mediumvioletred;
+}
+
+a:active {
+  color: violet;
+}
+
+button {
+  color: white;
+  background-color: gray;
+  padding: 0.3em 0.9em;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: black;
+}
