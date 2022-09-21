@@ -14,6 +14,8 @@ h1 {
 h2 {
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-variant: small-caps;
 }
 
 code {
@@ -28,20 +30,14 @@ li {
 }
 
 .aboutBio {
-  font-style: italic;
-  font-variant: small-caps;
   color: orangered;
 }
 
 .comSection {
-  font-style: italic;
-  font-variant: small-caps;
   color: tomato;
 }
 
 .updateQ {
-  font-style: italic;
-  font-variant: small-caps;
   color: orange;
 }
 
