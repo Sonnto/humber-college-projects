@@ -7,6 +7,7 @@ h1 {
   color: red;
   font-size: 35px;
   font-variant: small-caps;
+  text-decoration: underline;
 }
 
 h2 {
@@ -18,6 +19,7 @@ h2 {
 .boxed {
   background-color: rgb(190, 190, 190);
   border-style: outset;
+  display: inline;
 }
 
 .aboutBio {
