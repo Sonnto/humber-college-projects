@@ -15,10 +15,15 @@ h2 {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* box-up code displayed on HTML*/
-.boxedCode {
+code {
   background-color: rgb(190, 190, 190);
   border-style: outset;
+  line-height: 20px;
+}
+
+li {
+  list-style: square;
+  line-height: 21px;
 }
 
 .aboutBio {
@@ -37,11 +42,6 @@ h2 {
   font-style: italic;
   font-variant: small-caps;
   color: orange;
-}
-
-li {
-  list-style: square;
-  line-height: 21px;
 }
 
 a:visited {
