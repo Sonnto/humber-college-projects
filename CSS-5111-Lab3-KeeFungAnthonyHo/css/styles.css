@@ -6,6 +6,7 @@ h1 {
   font-family: "Times New Roman", Times, serif;
   color: red;
   font-size: 35px;
+  font-variant: small-caps;
 }
 
 h2 {
@@ -21,17 +22,25 @@ h2 {
 
 .aboutBio {
   font-style: italic;
+  font-variant: small-caps;
   color: orangered;
 }
 
 .comSection {
   font-style: italic;
+  font-variant: small-caps;
   color: tomato;
 }
 
 .updateQ {
   font-style: italic;
+  font-variant: small-caps;
   color: orange;
+}
+
+li {
+  list-style: square;
+  line-height: 21px;
 }
 
 a:visited {
@@ -53,11 +62,15 @@ a:active {
 
 button {
   color: white;
-  background-color: gray;
+  background-color: green;
   padding: 0.3em 0.9em;
   border-radius: 10px;
 }
 
 button:hover {
-  background-color: black;
+  background-color: rgb(68, 159, 68);
+}
+
+button:active {
+  background-color: rgb(157, 179, 125);
 }
