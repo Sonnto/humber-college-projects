@@ -13,6 +13,7 @@ h2 {
   font-family: "Times New Roman", Times, serif;
 }
 
+/* box-up code displayed on HTML*/
 .boxed {
   background-color: rgb(190, 190, 190);
   border-style: outset;
