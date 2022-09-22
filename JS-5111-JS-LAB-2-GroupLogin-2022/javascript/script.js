@@ -17,14 +17,26 @@
 //VARIABLES DECLARED
 var userTeamNum;
 var userTeamName;
+var firstName1 = "Anthony";
+var firstName2 = "Sophia";
+var firstName3 = "Wenbo";
+var firstName4 = "Ramin";
+var firstName5 = "Andrew";
+var lastName1 = "Ho";
+var lastName2 = "Scott";
+var lastName3 = "Min";
+var lastName4 = "Fallahi";
+var lastName5 = "Barker";
 
 //LOGIC
-var userTeamNum = prompt("Please indicate which team number you belong to:");
+userTeamNum = prompt("Please indicate which team number you belong to:");
 /*PROMPT USER FOR TEAM NUMBER*/
 console.log(userTeamNum); /* CONSOLE LOG CHECK */
 /* IF USER'S INPUT IS "1" */
 if (userTeamNum === "1") {
-  var userTeamName = prompt("Please indicate your first name:");
+  userTeamName = prompt(
+    "Welcome to Team 1: the best team. Please now provide your first name:"
+  );
   /* PROMPTS USER FOR THEIR NAME */
   console.log(userTeamName); /* CONSOLE LOG CHECK */
   switch (
@@ -32,19 +44,19 @@ if (userTeamNum === "1") {
   ) {
     case "anthony":
       console.log("check"); /* CONSOLE LOG CHECK */
-      alert("Welcome, Kee-Fung Anthony Ho!");
+      alert("Welcome, " + firstName1 + " " + lastName1 + "!");
       break;
     case "sophia":
-      alert("Welcome, Sophia Scott!");
+      alert("Welcome, " + firstName2 + " " + lastName2 + "!");
       break;
     case "wenbo":
-      alert("Welcome, Wenbo Min!");
+      alert("Welcome, " + firstName3 + " " + lastName3 + "!");
       break;
     case "ramin":
-      alert("Welcome, Ramin Fallahi!");
+      alert("Welcome, " + firstName4 + " " + lastName4 + "!");
       break;
     case "andrew":
-      alert("Welcome, Andrew Barker!");
+      alert("Welcome, " + firstName5 + " " + lastName5 + "!");
       break;
     default:
       alert("Access Denied! You must not be a member of this team!");
