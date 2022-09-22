@@ -44,11 +44,11 @@ alert(outMessage);
 //Variables
 var userCode;
 var outMessage;
-var teach1 = "Rajiv Verma";
+var teach1 = "Adam Thomas";
 var teach2 = "Bernie Monette";
 var teach3 = "Sean Doyle";
 var teach4 = "Joanna Kommala";
-var teach5 = "Bill Wright";
+var teach5 = "Simon Borer";
 
 //Logic
 //Get course code from user
@@ -58,23 +58,23 @@ userCode = prompt(
 
 //Compare code to known codes and assign teacher name if valid
 switch (userCode) {
-  case "5101":
+  case "5111":
     outMessage = teach1 + " " + "teaches HTTP" + userCode + ".";
     break;
 
-  case "5102":
+  case "5110":
     outMessage = teach2 + " " + "teaches HTTP" + userCode + ".";
     break;
 
-  case "5103":
+  case "5112":
     outMessage = teach3 + " " + "teaches HTTP" + userCode + ".";
     break;
 
-  case "5104":
+  case "5114":
     outMessage = teach4 + " " + "teaches HTTP" + userCode + ".";
     break;
 
-  case "5105":
+  case "5113":
     outMessage = teach5 + " " + "teaches HTTP" + userCode + ".";
     break;
 
