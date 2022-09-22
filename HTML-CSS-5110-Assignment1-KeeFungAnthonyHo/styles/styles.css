@@ -1,0 +1,28 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+a:link {
+  color: #f00;
+}
+
+a:visited {
+  color: #fc0;
+}
+
+a:hover {
+  background-color: #3cf;
+  color: #03f;
+}
+
+a:active {
+  color: #f3f;
+}
+
+logo {
+  font-size: 36px;
+}
