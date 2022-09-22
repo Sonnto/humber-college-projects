@@ -6,6 +6,11 @@ body {
   color: #000;
 }
 
+img {
+  height: 70px;
+  width: 70px;
+}
+
 a:link {
   color: #f00;
 }
