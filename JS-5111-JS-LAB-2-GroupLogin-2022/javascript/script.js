@@ -28,10 +28,13 @@ if (userTeamNum === "1") {
   /* PROMPTS USER FOR THEIR NAME */
   console.log(userTeamName); /* CONSOLE LOG CHECK */
   switch (
-    userTeamName.toLowerCase() /* CHECKS USER'S NAME AGAINST TEAM MEMBERS BELOW */
+    /* CHECKS USER'S NAME AGAINST TEAM MEMBERS BELOW */ userTeamName.toLowerCase() /* TURNS ALL TEXT INPUT INTO LOWERCASE */
   ) {
-    case "sophia":
+    case "anthony":
       console.log("check"); /* CONSOLE LOG CHECK */
+      alert("Welcome, Kee-Fung Anthony Ho!");
+      break;
+    case "sophia":
       alert("Welcome, Sophia Scott!");
       break;
     case "wenbo":
