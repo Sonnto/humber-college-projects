@@ -17,6 +17,13 @@
 //VARIABLES DECLARED
 var userTeamNum;
 var userTeamName;
+/* team member names */
+var teamMem1 = "anthony";
+var teamMem2 = "sophia";
+var teamMem3 = "wenbo";
+var teamMem4 = "ramin";
+var teamMem5 = "andrew";
+/*complete names of current team members */
 var firstName1 = "Anthony";
 var firstName2 = "Sophia";
 var firstName3 = "Wenbo";
@@ -42,20 +49,20 @@ if (userTeamNum === "1") {
   switch (
     /* CHECKS USER'S NAME AGAINST TEAM MEMBERS BELOW */ userTeamName.toLowerCase() /* TURNS ALL TEXT INPUT INTO LOWERCASE */
   ) {
-    case "anthony":
+    case teamMem1:
       console.log("check"); /* CONSOLE LOG CHECK */
       alert("Welcome, " + firstName1 + " " + lastName1 + "!");
       break;
-    case "sophia":
+    case teamMem2:
       alert("Welcome, " + firstName2 + " " + lastName2 + "!");
       break;
-    case "wenbo":
+    case teamMem3:
       alert("Welcome, " + firstName3 + " " + lastName3 + "!");
       break;
-    case "ramin":
+    case teamMem4:
       alert("Welcome, " + firstName4 + " " + lastName4 + "!");
       break;
-    case "andrew":
+    case teamMem5:
       alert("Welcome, " + firstName5 + " " + lastName5 + "!");
       break;
     default:
