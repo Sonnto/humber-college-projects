@@ -8,8 +8,6 @@ var myTeam = [
   "Sophia Scott",
   "John Cena",
 ];
-var j = i + 1;
-
 //OUTPUT TEAM ARRAY TO JS CONSOLE
 console.log(myTeam);
 
@@ -25,5 +23,6 @@ console.log(myTeam.sort());
 alert("We have" + " " + myTeam.length + " " + "people in our group");
 //LOOP THROUGH ARRAY TO OUTPUT TEAM MEMBERS/NUMBERS TO JS CONSOLE
 for (var i = 0; i < myTeam.length; i++) {
+  var j = i + 1;
   console.log(myTeam[i] + " " + "is #" + j);
 }
