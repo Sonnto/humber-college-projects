@@ -42,7 +42,7 @@ LIMIT 10 OFFSET 0
 -- Question 8 --
 SELECT SUM(Cost_of_Bike)/COUNT(*) AS 'Column 1',
 AVG(Cost_of_Bike) AS 'Column 2'
-FROM bikeTheft 
+FROM bikeTheft
 	
 
 -- Question 9 --
