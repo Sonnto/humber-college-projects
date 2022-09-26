@@ -35,3 +35,58 @@ console.log(allBooks);
 //NOTE SEPARATOR
 console.log(allBooks.join(", "));
 console.log(allBooks.join(" ### "));
+
+//SORT
+var booksAlpha = allBooks.sort();
+console.log(booksAlpha);
+console.log(myNums); //DOESN'T WORK AS EXPECTED WITH NUMBERS
+console.log(myNums.sort()); //SORTS NUMBERS BY 1ST CHARACTER, SO 10 CONSOME BEFORE 2, BECUASE 1 COMES BEFORE 2
+
+//REVERSE ORDER OF ARRAY
+var booksReversed = booksAlpha.reverse();
+
+//INDEX OF - FIND SOMETHING IN ARRAY
+var arrIndex = booksAlpha.indexOf("Bazaar");
+console.log(arrIndex);
+//THIS RETURNS INDEX OF PARAMETER IN ARRAY
+//IF IT CANT FIND IT, IT RETURNS -1
+//KNOWING IT IS -1 ALLOWS YOU TO PROGRAM LOGIC WHEN SEARCHING AN ARRAY...
+if (arrIndex === -1) {
+  alert("Book not found.");
+}
+
+//SLICE - TAKE PIECE OF ARRAY
+//array.slice (START INDEX, END BEFORE)
+var first5 = booksAlpha.slice(0, 5);
+//START AT 1ST ITEM, STOP BEFORE 5TH ITEM
+var after5 = booksAlpha.slice(5); //IF ONLY 1 PARAMETER, START HERE
+//START AT INDEX 5
+
+var joy3 = booksAlpha.slice(2, 5);
+console.log(joy3);
+
+//ADD, REMOVE ITEMS
+myArray.pop(); //REMOVES LAST ELEMENT FROM ARRAY
+//NOTE: pop() RETURNS ITEM THAT IT REMOVED FROM ARRAY
+console.log(myArray);
+console.log(myArray.pop());
+
+myArray.push("Maple"); //ADDS PARAMETER TO END OF ARRAY
+//NOTE: push() RETURNS THE NEW ARRAY LENGTH
+console.log(myArray.push("Maple"));
+console.log(myArray);
+
+myArray.shift(); //REMOVES FIRST ITEM FROM ARRAY
+console.log(myArray.shift());
+console.log(myArray);
+
+myArray.unshift("Birch"); // ADDS PARAMETER TO FRONT OF ARRAY
+console.log(myArray.unshift("Birch"));
+console.log(myArray);
+
+//SPLICE - ADDS & REMOVES FROM MIDDLE OF ARRAY
+//array.splice(start, deleteCount, new item(s))
+myArray.splice(1, 1); //REMOVE 1 ITEM STARTING AT END OF 1
+console.log(myArray);
+myArray.splice(1, 1, "Cherry", "Willow"); //REMOVE 1 & ADD 2
+console.log(myArray);
