@@ -47,3 +47,23 @@ for (var i = 0; i < animalArray.length; i++) {
 //THE WHILE LOOP IS OFTEN USED WHEN YOU DON'T KNOW HOW MANY TIMES A LOOP
 //SHOULD RUN, JUST THAT IT SHOULD RUN AS LONG AS A CERTAIN CONDITION OR
 //STATE IS TRUE
+
+//FIRST OFF, REPLACING A for LOOP
+var hoursToGo = 4; //FIRST WE NEED TO SET STARTING VALUE
+while (hoursToGo > 0) {
+  hoursToGo--;
+}
+
+var whileTest = false;
+while (whileTest === false) {
+  var confirmCheck = confirm("OK?");
+  if (confirmCheck === true) {
+    whileTest = true;
+  }
+}
+alert("OK, we're done.");
+
+//THERE ARE OTHER JS LOOPS THAT WE DO NOT COVER IN CLASS, CHECK OUT MDN
+// TO LEARN ABOUT for... in... AND do... while.
+//ALSO, CHECK THE .map AND .forEach METHODS OF ARRAYS TO LEARN A FUNCTIONAL
+// APPROACH TO DEALING WITH ARRAYS.
