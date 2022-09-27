@@ -40,7 +40,7 @@ console.log(allBooks.join(" ### "));
 var booksAlpha = allBooks.sort();
 console.log(booksAlpha);
 console.log(myNums); //DOESN'T WORK AS EXPECTED WITH NUMBERS
-console.log(myNums.sort()); //SORTS NUMBERS BY 1ST CHARACTER, SO 10 CONSOME BEFORE 2, BECUASE 1 COMES BEFORE 2
+console.log(myNums.sort()); //SORTS NUMBERS BY 1ST CHARACTER, SO 10 COMES BEFORE 2, BECAUSE 1 COMES BEFORE 2
 
 //REVERSE ORDER OF ARRAY
 var booksReversed = booksAlpha.reverse();
