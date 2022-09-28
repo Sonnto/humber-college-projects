@@ -30,28 +30,33 @@ var userInput = prompt(
   "Which top 10 book would you like?",
   "Pick a number: 1-10"
 );
-console.log("check first userInput prompt");
-let userChoice = parseInt(userInput) - 1;
-let bookIndex = bookList.indexOf(bookList[userChoice]);
+console.log("passed first userInput prompt"); //ASK USER FOR INPUT
+let userChoice = parseInt(userInput) - 1; //ENSURES ENTERING 1-10 INPUT IS READ AS 0-9.
+let bookIndex = bookList.indexOf(bookList[userChoice]); //1-10 READ AS 0-9 for n in array.indexOf(array[n]);
 console.log(bookIndex);
-if (isNaN(userInput)) {
-  alert("Please enter a number between 1 and 10.");
-  console.log("check first if");
+if (isNaN(userInput) || userInput > 10 || userInput <= 0) {
+  // TRIGGERS INVALID INPUT ALERT IF INPUT IS NOT A NUMBER, GREATER THAN 10, OR LESS THAN 0
+  console.log("passed first if-statement");
+  alert("Invalid input. Please enter a number between 1 and 10.");
+  console.log("triggered first if-alert");
 }
+//LOOP START
 while (bookIndex === -1) {
+  // TRIGGERS while LOOP IF bookIndex is -1
   userInput = prompt(
     "Which top 10 book would you like?",
     "Pick a number: 1-10"
-  );
-  console.log("check inside while loop userInput prompt");
+  ); //ASKS USER FOR INPUT AGAIN
+  console.log("passed userInputprompt inside while-loop");
   userChoice = parseInt(userInput) - 1;
   bookIndex = bookList.indexOf(bookList[userChoice]);
   console.log(bookIndex);
-  if (isNaN(userInput)) {
-    alert("Please enter a number between 1 and 10.");
-    console.log("check inside while loop if");
+  if (isNaN(userInput) || userInput > 10 || userInput <= 0) {
+    alert("Invalid input. Please enter a number between 1 and 10.");
+    console.log("triggered if-alert inside while-loop");
   }
 }
+//LOOP END
 alert(
   "Number" +
     " " +
@@ -62,7 +67,7 @@ alert(
     bookList[userChoice] +
     "."
 );
-console.log("check final alert with books");
+console.log("passed final alert with books");
 for (var i = 0; i < bookList.length; i++) {
   var j = i + 1;
   console.log("Book #" + j + ":" + " " + bookList[i]);
