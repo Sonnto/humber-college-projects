@@ -1,0 +1,49 @@
+.header {
+  margin: 0.5em;
+}
+
+.header,
+.main-item,
+.sidebar-item,
+.sidebar-container,
+.footer {
+  border: 1px solid #000;
+  gap: 1em;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.main-item {
+  flex: 2 0 0;
+}
+
+.sidebar-item {
+  flex: 1 0 0;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-flow: wrap;
+  margin: 15px 0;
+}
+
+.items-title {
+  flex: 100% 0 0;
+}
+
+.item {
+  border: 1px solid #000;
+  flex: 10 0 0;
+  padding: 1em;
+}
+
+.footer {
+  margin: 0.4em;
+  font-size: 20px;
+}
