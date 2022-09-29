@@ -11,7 +11,7 @@ while (userTotal < 35) {
   let userInput = prompt("Enter prices: "); //asks user to input values
   parseInt(userInput); //changes input to numbers
   userTotal = userTotal + parseInt(userInput); //adds userinput with the total
-  userCart.push(userInput); //pushes the userInput into the userCart array
+  userCart.push(userInput); //pushes the userInput into the end of userCart array
   console.log(userCart);
 }
 //GET ITEM COST FROM USER
