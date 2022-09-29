@@ -31,7 +31,7 @@ var userInput = prompt(
 let userChoice = parseInt(userInput) - 1; //ENSURES ENTERING 1-10 INPUT IS READ AS 0-9.
 let bookIndex = bookList.indexOf(bookList[userChoice]); //1-10 READ AS 0-9 for n in array.indexOf(array[n]);
 // console.log("check; bookIndex value: " + bookIndex);
-if (isNaN(userInput) || userInput > 10 || userInput <= 0) {
+if (isNaN(userInput) || userInput > 10 || userInput < 1) {
   // TRIGGERS INVALID INPUT ALERT IF INPUT IS NOT A NUMBER, NUMBER IS GREATER THAN 10, OR LESS THAN 0
   // console.log(
   //   "check; triggered if-statement conditions of userInput being NaN, > 10, <= 0"
@@ -52,7 +52,7 @@ while (bookIndex === -1) {
   userChoice = parseInt(userInput) - 1;
   bookIndex = bookList.indexOf(bookList[userChoice]);
   // console.log("check; bookIndex value: " + bookIndex);
-  if (isNaN(userInput) || userInput > 10 || userInput <= 0) {
+  if (isNaN(userInput) || userInput > 10 || userInput < 1) {
     // console.log(
     //   "check; triggered inside while-loop: if-statement conditions of userInput being NaN, > 10, <= 0"
     // );
