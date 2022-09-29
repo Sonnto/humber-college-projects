@@ -3,6 +3,11 @@
 }
 
 .header,
+.footer {
+  display: flex;
+}
+
+.header,
 .main-item,
 .sidebar-item,
 .sidebar-container,
