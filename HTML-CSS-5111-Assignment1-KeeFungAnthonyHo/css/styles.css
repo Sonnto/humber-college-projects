@@ -9,10 +9,11 @@ html {
   list-style: none;
   justify-content: center;
   text-decoration: none;
-  padding: 0;
-  margin: 0;
+  padding: 1em;
+  margin: 1;
   gap: 3em;
   background: whitesmoke;
+  border-bottom: 1px solid grey;
 }
 
 #h1 {
@@ -21,11 +22,14 @@ html {
 
 #main {
   /* border: 1px solid blue; */
+  background: whitesmoke;
 }
 
 .pageContainer {
   display: flex;
   /* border: 1px solid gold; */
+  background: whitesmoke;
+  padding-left: 1em;
 }
 
 .articleTitle,
@@ -47,6 +51,7 @@ html {
 
 .commentSectionTitleItem {
   /* border: 1px solid purple; */
+  border-top: 1px solid grey;
 }
 
 #comments {
@@ -54,7 +59,6 @@ html {
 }
 
 /* IMAGES */
-
 .articleImageTop,
 .articleImageBot {
   display: block;
@@ -75,6 +79,7 @@ html {
 
 .sidebarContainer {
   /* border: 1px solid red; */
+  margin-left: 1em;
 }
 
 .sidebarItemContents {
@@ -86,7 +91,7 @@ html {
 .sidebarItemContainers {
   display: flex;
   flex-flow: row wrap;
-  gap: 5em;
+  gap: 0em;
   /* border: 1px solid greenyellow; */
 }
 
@@ -99,7 +104,8 @@ html {
 .sidebarImage1,
 .sidebarImage2,
 .sidebarImage3,
-.sidebarImage4 {
+.sidebarImage4,
+.sidebarImage5 {
   display: block;
   max-height: 300px;
   max-width: 300px;
@@ -107,7 +113,6 @@ html {
 }
 
 /* LINKS */
-
 a {
   text-decoration: none;
 }
