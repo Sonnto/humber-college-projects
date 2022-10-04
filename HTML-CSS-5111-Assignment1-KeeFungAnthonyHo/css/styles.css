@@ -7,6 +7,7 @@ html {
 #nav {
   display: flex;
   list-style: none;
+  justify-content: center;
   text-decoration: none;
   padding: 0;
   margin: 0;
@@ -15,6 +16,15 @@ html {
 
 #h1 {
   text-decoration: none;
+}
+
+#main {
+  border: 1px solid blue;
+}
+
+.pageContainer {
+  display: flex;
+  border: 1px solid gold;
 }
 
 .articleTitle,
@@ -26,9 +36,18 @@ html {
   text-align: center;
 }
 
-.articlePara {
-  display: block;
-  text-align: justify;
+.commentSectionContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid orangered;
+}
+
+.commentSectionTitleItem {
+  border: 1px solid purple;
+}
+
+#comments {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* IMAGES */
@@ -38,13 +57,11 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 50%; */
+  min-width: 300px;
 }
 
 .articleImage1,
 .articleImage2 {
-  /* max-height: 270px;
-  max-width: 480px; */
   max-height: 100%;
   max-width: 100%;
 }
@@ -60,21 +77,20 @@ html {
 .sidebarItemContents {
   list-style: none;
   text-decoration: none;
-  margin: 0 auto;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .sidebarItemContainers {
   display: flex;
   flex-flow: row wrap;
-  gap: 3em;
+  gap: 5em;
   border: 1px solid greenyellow;
 }
 
 .sidebarItems {
   text-justify: center;
   border: 1px solid blueviolet;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 .sidebarImage1,
