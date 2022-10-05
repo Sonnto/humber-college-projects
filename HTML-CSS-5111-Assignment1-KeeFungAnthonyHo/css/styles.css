@@ -16,6 +16,8 @@ html {
   border-bottom: 1px solid grey;
 }
 
+/* MAIN */
+
 #h1 {
   text-decoration: none;
 }
@@ -41,6 +43,8 @@ html {
   text-align: center;
 }
 
+/* COMMENT */
+
 .commentSectionContainer {
   display: flex;
   flex-direction: column;
@@ -58,7 +62,11 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* IMAGES */
+.commentFields {
+  margin-bottom: 0.5em;
+}
+
+/* MAIN IMAGES */
 .articleImageTop,
 .articleImageBot {
   display: block;
@@ -76,6 +84,8 @@ html {
 .articleImage2 {
   width: 100%;
 }
+
+/* SIDEBAR */
 
 .sidebarContainer {
   /* border: 1px solid red; */
