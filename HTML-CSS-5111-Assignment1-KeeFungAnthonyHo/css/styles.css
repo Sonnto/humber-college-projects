@@ -33,6 +33,7 @@ html {
   /* border: 1px solid gold; */
   background: whitesmoke;
   padding: 1em;
+  border-bottom: 1px solid grey;
 }
 
 .articleTitle,
