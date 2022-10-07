@@ -65,8 +65,8 @@ function alphaSortGuests(guestArray) {
 // console.log(test);
 
 // Function to output the guest list and the meal counts.
-function outputEventDetails(guest) {
-  var guestOutput = alphaSortGuests(guest);
+function outputEventDetails(guests) {
+  var guestOutput = alphaSortGuests(guests);
   console.log(`Our guests: ${guestOutput}`);
 
   var countArray = countMeals(mealList);
@@ -84,30 +84,42 @@ function countMeals(mealList) {
   mealCountArray = [];
 
   for (var i = 0; i < mealList.length; i++) {
-    if (mealList[i] === "CH") {
-      CHcount += 1;
-    } else if (mealList[i] === "VG") {
-      VGcount += 1;
-    } else {
-      unknown += 1;
+    console.log(mealList[i]);
+    switch (mealList[i]) {
+      case "CH":
+        CHcount += 1;
+        break;
+      case "VG":
+        VGcount += 1;
+        break;
+      default:
+        unknown += 1;
+        break;
     }
+    // if (mealList[i] === "CH") {
+    //   CHcount += 1;
+    // } else if (mealList[i] === "VG") {
+    //   VGcount += 1;
+    // } else {
+    //   unknown += 1;
+    // }
   } //end of loop;
 
-  mealCountArray.unshift(CHcount);
-  mealCountArray.unshift(VGcount);
   mealCountArray.unshift(unknown);
+  mealCountArray.unshift(VGcount);
+  mealCountArray.unshift(CHcount);
 
   return mealCountArray;
 }
 
-var test2 = countMeals(mealList);
-console.log(test2);
+// var test2 = countMeals(mealList);
+// console.log(test2);
 
 // Function to get the guests and their meal choices.
 function getGuests() {
   var isFinished = false;
   while (isFinished === false) {
-    var guest = prompt("Last name of guest?");
+    var guest = prompt(`Last name of guest?`);
     if (guest === null || guest === "") {
       isFinished = true;
     } else {
