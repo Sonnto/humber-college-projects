@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Order Confirmation</h2>
+<p>Thank you for your order. It has been successfully submitted!</p>
+
+<p>@ViewData["Summary"]</p>
+
+<ul>
+    <li>@ViewData["CustomerName"]</li>
+    <li>@ViewData["OrderSize"]</li>
+    <li>@ViewData["OrderColour"]</li>
+    <li>@ViewData["totalCost"]</li>
+</ul>
